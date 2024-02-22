@@ -1,0 +1,33 @@
+.layout-component {
+  @apply relative h-full w-full;
+  &__effect {
+    @apply absolute h-full w-full;
+
+    &.fade {
+      animation: fade 1s forwards;
+    }
+    &.blur {
+      animation: blur 0.4s forwards;
+    }
+  }
+}
+
+@keyframes fade {
+  from {
+    @apply opacity-0;
+  }
+  to {
+    @apply opacity-100;
+  }
+}
+
+@keyframes blur {
+  from {
+    filter: blur(5px);
+    @apply opacity-0;
+  }
+  to {
+    filter: blur(0px);
+    @apply opacity-100;
+  }
+}
