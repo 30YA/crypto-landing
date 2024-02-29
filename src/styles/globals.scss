@@ -1,6 +1,7 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import './fonts.scss';
 @import './components.scss';
 @import './variables.scss';
@@ -35,6 +36,7 @@ html {
 *,
 body {
   font-family: $font-family !important;
+  box-sizing: border-box;
 }
 
 html {
@@ -102,4 +104,12 @@ a {
 
 .ltr {
   direction: ltr;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  background-image: url('../../public/assets/images/png/background.png');
+  background-position: center;
 }
