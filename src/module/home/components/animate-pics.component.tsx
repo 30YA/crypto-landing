@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 
 import Coin1 from '~/assets/images/svg/coin-1.svg';
@@ -17,17 +18,17 @@ import Ellipse3 from '~/assets/images/svg/ellipse-3.svg';
 function AnimatePics() {
   return (
     <div className="absolute left-0 top-0 w-full">
-      <Coin1 className="absolute -top-5 right-[7%] z-20 animate-UpDownSpin dark:hidden md:hidden" />
-      <Coin1Dark className="absolute -top-5 right-[7%] z-20 hidden animate-UpDownSpin dark:block dark:md:hidden" />
+      <Coin1 className="animate-UpDownSpin absolute -top-5 right-[7%] z-20 dark:hidden md:hidden" />
+      <Coin1Dark className="animate-UpDownSpin absolute -top-5 right-[7%] z-20 hidden dark:block dark:md:hidden" />
 
-      <Coin2 className="absolute right-[12%] top-[250px] z-20 animate-UpDownSpin dark:hidden md:hidden" />
-      <Coin2Dark className="absolute right-[12%] top-[250px] z-20 hidden animate-UpDownSpin dark:block dark:md:hidden" />
+      <Coin2 className="animate-UpDownSpin absolute right-[12%] top-[250px] z-20 dark:hidden md:hidden" />
+      <Coin2Dark className="animate-UpDownSpin absolute right-[12%] top-[250px] z-20 hidden dark:block dark:md:hidden" />
 
-      <Coin3 className="absolute left-[10%] top-[80px] z-20 animate-UpDownSpin dark:hidden md:hidden" />
-      <Coin3Dark className="absolute left-[10%] top-[80px] z-20 hidden animate-UpDownSpin dark:block dark:md:hidden" />
+      <Coin3 className="animate-UpDownSpin absolute left-[10%] top-[80px] z-20 dark:hidden md:hidden" />
+      <Coin3Dark className="animate-UpDownSpin absolute left-[10%] top-[80px] z-20 hidden dark:block dark:md:hidden" />
 
-      <Coin4 className="absolute left-[14%] top-[320px] z-20 animate-UpDownSpin dark:hidden md:hidden" />
-      <Coin4Dark className="absolute left-[14%] top-[320px] z-20 hidden animate-UpDownSpin dark:block dark:md:hidden" />
+      <Coin4 className="animate-UpDownSpin absolute left-[14%] top-[320px] z-20 dark:hidden md:hidden" />
+      <Coin4Dark className="animate-UpDownSpin absolute left-[14%] top-[320px] z-20 hidden dark:block dark:md:hidden" />
 
       <Ellipse1 className="absolute left-0 top-0 z-10" />
       <Ellipse2 className="absolute right-0 top-0 z-10" />
