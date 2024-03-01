@@ -29,6 +29,7 @@ const config = {
         // => @media (max-width: 767px) { ... }
         sm: { max: '639px' },
         // => @media (max-width: 639px) { ... }
+        xs: { max: '480px' },
       },
       colors: {
         primary: '#54B990',
