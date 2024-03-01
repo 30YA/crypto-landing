@@ -16,7 +16,7 @@ function Home() {
   return (
     <div className="flex h-full flex-col">
       <NavBar />
-      <main className="main relative h-full flex-col items-center justify-center overflow-y-auto px-4 py-10 dark:bg-black-1100">
+      <main className="main relative h-full flex-col items-center justify-center overflow-y-auto overflow-x-hidden px-4 py-10 dark:bg-black-1100">
         <Title />
         <OrderCard />
         <Services />
