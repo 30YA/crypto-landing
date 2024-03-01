@@ -28,7 +28,7 @@ function NavBar() {
   };
 
   return (
-    <nav className=" dark:bg-black-1200 z-50 flex h-[88px] w-full items-center justify-between overflow-hidden bg-white px-[120px] shadow-[0_8px_40px_0_#00000010] dark:shadow-[0_8px_40px_0_#00000050;] md:px-4">
+    <nav className=" z-50 flex h-[88px] w-full items-center justify-between overflow-hidden bg-white px-[120px] shadow-[0_8px_40px_0_#00000010] dark:bg-black-1200 dark:shadow-[0_8px_40px_0_#00000050;] md:px-4">
       <div className="shrink">
         {darkMode ? (
           <DarkLogo className="h-full w-[251px] sm:w-[200px]" />
@@ -39,25 +39,25 @@ function NavBar() {
       <ul className="mx-2 flex h-full w-[800px] justify-center gap-[30px] xl:hidden">
         <li
           onClick={() => handleItemClick('home')}
-          className={`flex h-full w-[120px] grow cursor-pointer items-center justify-center border-b-4 border-transparent text-base text-gray-default ${activeItem === 'home' ? 'text-black-1000 border-b-4 !border-primary font-semibold dark:text-white' : ''}`}
+          className={`flex h-full w-[120px] grow cursor-pointer items-center justify-center border-b-4 border-transparent text-base text-gray-default ${activeItem === 'home' ? 'border-b-4 !border-primary font-semibold text-black-1000 dark:text-white' : ''}`}
         >
           خانه
         </li>
         <li
           onClick={() => handleItemClick('aboutUs')}
-          className={`flex h-full w-[120px] grow cursor-pointer items-center justify-center border-b-4 border-transparent text-base text-gray-default ${activeItem === 'aboutUs' ? 'text-black-1000 border-b-4 !border-primary font-semibold dark:text-white' : ''}`}
+          className={`flex h-full w-[120px] grow cursor-pointer items-center justify-center border-b-4 border-transparent text-base text-gray-default ${activeItem === 'aboutUs' ? 'border-b-4 !border-primary font-semibold text-black-1000 dark:text-white' : ''}`}
         >
           درباره ما
         </li>
         <li
           onClick={() => handleItemClick('rules')}
-          className={`flex h-full w-[120px] grow cursor-pointer items-center justify-center border-b-4 border-transparent text-base text-gray-default ${activeItem === 'rules' ? 'text-black-1000 border-b-4 !border-primary font-semibold dark:text-white' : ''}`}
+          className={`flex h-full w-[120px] grow cursor-pointer items-center justify-center border-b-4 border-transparent text-base text-gray-default ${activeItem === 'rules' ? 'border-b-4 !border-primary font-semibold text-black-1000 dark:text-white' : ''}`}
         >
           قوانین استفاده
         </li>
         <li
           onClick={() => handleItemClick('help')}
-          className={`flex h-full w-[120px] grow cursor-pointer items-center justify-center border-b-4 border-transparent text-base text-gray-default ${activeItem === 'help' ? 'text-black-1000 border-b-4 !border-primary font-semibold dark:text-white' : ''}`}
+          className={`flex h-full w-[120px] grow cursor-pointer items-center justify-center border-b-4 border-transparent text-base text-gray-default ${activeItem === 'help' ? 'border-b-4 !border-primary font-semibold text-black-1000 dark:text-white' : ''}`}
         >
           راهنما
         </li>

@@ -35,7 +35,7 @@ const InputSelect = React.forwardRef<HTMLInputElement, InputProps>(
     ref
   ) => {
     return (
-      <div className="dark:bg-black-1100 relative mb-2 flex items-center justify-center gap-2 rounded-md bg-gray-1000">
+      <div className="relative mb-2 flex items-center justify-center gap-2 rounded-md bg-gray-1000 dark:bg-black-1100">
         <Select>
           <SelectTrigger
             className={cn(
@@ -59,7 +59,7 @@ const InputSelect = React.forwardRef<HTMLInputElement, InputProps>(
           type={type}
           dir="rtl"
           className={cn(
-            'dark:bg-black-1100 flex h-14 w-full truncate rounded-lg bg-gray-1000 px-3 py-2 text-sm file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-1100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-400 disabled:cursor-not-allowed disabled:opacity-50 dark:border-transparent dark:ring-offset-gray-950 dark:placeholder:text-gray-400 dark:focus-visible:ring-gray-600',
+            'flex h-14 w-full truncate rounded-lg bg-gray-1000 px-3 py-2 text-sm file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-1100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-400 disabled:cursor-not-allowed disabled:opacity-50 dark:border-transparent dark:bg-black-1100 dark:ring-offset-gray-950 dark:placeholder:text-gray-400 dark:focus-visible:ring-gray-600',
             className
           )}
           ref={ref}
