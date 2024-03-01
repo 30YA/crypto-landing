@@ -30,12 +30,12 @@ function NavBar() {
         {darkMode ? (
           <>
             <DarkLogo className="xs:hidden h-full w-[251px]" />
-            <BaseLogoDark className="xs:block hidden" />
+            <BaseLogoDark className="xs:block sdfsdf hidden" />
           </>
         ) : (
           <>
             <Logo className="xs:hidden h-full w-[251px]" />
-            <BaseLogo className="xs:block hidden" />
+            <BaseLogo className="xs:block dsfdsf hidden" />
           </>
         )}
       </div>

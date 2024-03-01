@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 
-import Logo from '~/assets/images/svg/base-logo.svg';
-import LogoDark from '~/assets/images/svg/base-logo-dark.svg';
+import Logo from '~/assets/images/svg/base-logo-title.svg';
+import LogoDark from '~/assets/images/svg/base-logo-dark-title.svg';
 
 function Title() {
   return (
