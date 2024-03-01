@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import Logo from '~/assets/images/svg/logo.svg';
 import DarkLogo from '~/assets/images/svg/logo-dark.svg';
+import { Switch } from '@/components/ui/switch';
 
 function NavBar() {
   const [darkMode, setDarkMode] = useState(false);
@@ -13,18 +14,9 @@ function NavBar() {
     setActiveItem(item);
   };
 
-  useEffect(() => {
-    const isDark = localStorage.getItem('darkMode') === 'true';
-    setDarkMode(isDark);
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('darkMode', darkMode ? 'true' : 'false');
-    document.documentElement.classList.toggle('dark', darkMode);
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+  const siavash = (e: boolean) => {
+    document.documentElement.classList.toggle('dark');
+    setDarkMode(e);
   };
 
   return (
@@ -62,10 +54,9 @@ function NavBar() {
           راهنما
         </li>
       </ul>
-      <div className="flex min-w-[251px] justify-end xl:min-w-[0]">
-        <Button className="rounded-lg" onClick={toggleDarkMode}>
-          ورود / ثبت نام
-        </Button>
+      <div className="flex min-w-[251px] items-center justify-end xl:min-w-[0]">
+        <Switch className="ml-2" onCheckedChange={(e) => siavash(e)} />
+        <Button className="rounded-lg">ورود / ثبت نام</Button>
       </div>
     </nav>
   );
