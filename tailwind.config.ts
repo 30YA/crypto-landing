@@ -18,9 +18,25 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        '2xl': { max: '1535px' },
+        // => @media (max-width: 1535px) { ... }
+        xl: { max: '1325px' },
+        // => @media (max-width: 1279px) { ... }
+        lg: { max: '1023px' },
+        // => @media (max-width: 1023px) { ... }
+        md: { max: '767px' },
+        // => @media (max-width: 767px) { ... }
+        sm: { max: '639px' },
+        // => @media (max-width: 639px) { ... }
+      },
       colors: {
         primary: '#54B990',
-        black: '#1D1D1D',
+        black: {
+          1000: '#1D1D1D',
+          1100: '#19191A',
+          1200: '#232323',
+        },
         gray: {
           default: '#737373',
           1000: '#F5F5F5',
@@ -36,34 +52,22 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
-        moveUpDown: {
+        moveUpDownSpin: {
           '0%': {
-            transform: 'translateY(0)',
+            transform: 'translateY(0) rotate(0deg)',
           },
           '50%': {
-            transform: 'translateY(60px)',
+            transform: 'translateY(60px) rotate(30deg)',
           },
           '100%': {
-            transform: 'translateY(0)',
-          },
-        },
-        rotateDoor: {
-          '0%': {
-            transform: 'rotate(0deg)',
-          },
-          '50%': {
-            transform: 'rotate(30deg)',
-          },
-          '100%': {
-            transform: 'rotate(0deg)',
+            transform: 'translateY(0) rotate(0deg)',
           },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        siavash: 'moveUpDown 4s ease-in-out infinite',
-        siavashhhh: 'rotateDoor 4s ease-in-out infinite',
+        UpDownSpin: 'moveUpDownSpin 4s ease-in-out infinite',
       },
     },
   },

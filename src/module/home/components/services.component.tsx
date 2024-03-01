@@ -16,26 +16,26 @@ import HandCoin from '~/assets/images/svg/hand-coin-icon.svg';
 
 function Services() {
   return (
-    <div className="z-10 mt-14 flex w-full justify-center gap-9 overflow-hidden">
-      <Card className="shrink-1 flex min-h-28 max-w-[250px] grow flex-col justify-center gap-2 rounded-xl">
+    <div className="mx-auto mt-14 flex max-w-[1300px] flex-wrap justify-center gap-9 overflow-hidden md:mx-2">
+      <Card className="shrink-1 z-30 flex min-h-28 w-[250px] min-w-[150px] flex-col justify-center gap-2 rounded-xl">
         <CardContent className="flex flex-col items-center justify-center gap-4 p-0">
           <CustomerService />
           <p>پشتیبانی ۲۴ ساعته</p>
         </CardContent>
       </Card>
-      <Card className="shrink-1 flex min-h-28 max-w-[250px] grow flex-col justify-center gap-2 rounded-xl">
+      <Card className="shrink-1 z-30 flex min-h-28 w-[250px] min-w-[150px] flex-col justify-center gap-2 rounded-xl">
         <CardContent className="flex flex-col items-center justify-center gap-4 p-0">
           <LeftRight />
           <p>معامله خودکار</p>
         </CardContent>
       </Card>
-      <Card className="shrink-1 flex min-h-28 max-w-[250px] grow flex-col justify-center gap-2 rounded-xl">
+      <Card className="shrink-1 z-30 flex min-h-28 w-[250px] min-w-[150px] flex-col justify-center gap-2 rounded-xl">
         <CardContent className="flex flex-col items-center justify-center gap-4 p-0">
           <SecurePayment />
           <p>احراز هویت سریع</p>
         </CardContent>
       </Card>
-      <Card className="shrink-1 flex min-h-28 max-w-[250px] grow flex-col justify-center gap-2 rounded-xl">
+      <Card className="shrink-1 z-30 flex min-h-28 w-[250px] min-w-[150px] flex-col justify-center gap-2 rounded-xl">
         <CardContent className="flex flex-col items-center justify-center gap-4 p-0">
           <HandCoin />
           <p>قیمت ثابت و کارمزد کم</p>

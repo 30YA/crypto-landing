@@ -13,9 +13,10 @@ export function CardContent() {
         </p>
       </div>
       <InputSelect
-        className="text-center"
+        className="text-center md:text-right"
         placeholder="مبلغ مورد نظر جهت خرید / فروش تتر را وارد کنید"
         selectTrigger="ارز"
+        selectorClassName="md:relative"
         // here we can also pass a icon for every content but for now i used emoji
         selectContent={[
           { label: '🥲 تتر', value: 'value1' },

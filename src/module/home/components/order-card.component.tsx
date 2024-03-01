@@ -12,8 +12,8 @@ import { CardContent as CardInputs } from './card-content.component';
 
 function OrderCard() {
   return (
-    <div className="z-10 mt-10 flex justify-center">
-      <Card className=" flex w-[720px] flex-col gap-8 rounded-3xl px-14 py-9">
+    <div className="mt-10 flex justify-center">
+      <Card className=" z-30 flex w-[720px] flex-col gap-8 rounded-3xl px-14 py-9 md:mx-2 md:px-7">
         <CardContent className="p-0">
           <CardInputs />
         </CardContent>
